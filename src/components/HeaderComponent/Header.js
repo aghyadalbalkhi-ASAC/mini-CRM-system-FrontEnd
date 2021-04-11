@@ -30,11 +30,11 @@ class Header extends Component {
                                 <NavLink  className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
                             <NavItem>
-                            // eslint-disable-next-line
+                            
                                 <NavLink className="nav_right" className="nav-link" to='/login'><span className="fa fa-address-card fa-lg"></span> Login</NavLink>
                             </NavItem>
                             <NavItem>
-                                // eslint-disable-next-line
+                                
                                 <NavLink className="nav_right" className="nav-link" to='/Register'><span className="fa fa-address-card fa-lg"></span> Register</NavLink>
                             </NavItem>
                             </Nav>
