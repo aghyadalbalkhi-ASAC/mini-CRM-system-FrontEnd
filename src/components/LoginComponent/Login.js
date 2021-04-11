@@ -67,6 +67,7 @@ class Login extends Component {
             <br></br>
 
             <div className="container">
+            // eslint-disable-next-line
                             <div className="specialinput" className="row row-content">
                             <div className="col-12" >
                                 <Form onSubmit={this.login}>

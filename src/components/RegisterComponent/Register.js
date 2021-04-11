@@ -30,7 +30,7 @@ class Register extends Component {
         event.preventDefault();
 
     }
-    
+
     inputChanged = event =>{
         const cred = this.state.credentials;
         cred[event.target.name] = event.target.value;
@@ -69,6 +69,7 @@ class Register extends Component {
             <br></br>
 
             <div className="container">
+            // eslint-disable-next-line
                             <div className="specialinput" className="row row-content">
                             <div className="col-12" >
                                 <Form onSubmit={this.register}>

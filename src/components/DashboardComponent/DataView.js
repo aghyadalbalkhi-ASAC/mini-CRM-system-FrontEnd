@@ -1,5 +1,5 @@
 // DataView is a presentional Component used to render dashboard view
-
+// eslint-disable-next-line
 import react from 'react';
 import {Table,Jumbotron,Button} from 'reactstrap';
 import { Link } from 'react-router-dom';
