@@ -1,8 +1,8 @@
 // DataView is a presentional Component used to render dashboard view
 
-import react, { Component } from 'react';
+import react from 'react';
 import {Table,Jumbotron,Button} from 'reactstrap';
-import { Link,Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const DataView = (props) =>{
 

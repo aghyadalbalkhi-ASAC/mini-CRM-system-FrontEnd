@@ -1,8 +1,6 @@
 import React,{ Component } from 'react';
 
 import DataView from './DataView';
-import { Link } from 'react-router-dom';
-
 
 class Dashboard extends Component {
     constructor(props){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
+import { Jumbotron, Button, Form, FormGroup, Label, Input, Col, FormFeedback } from 'reactstrap';
 
 
 class FormData extends Component {
