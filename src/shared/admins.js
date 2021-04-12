@@ -1,6 +1,6 @@
 
 const getAdmins= async () =>  {
-    let url = `http://localhost:3000/admins`;
+    let url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/admins`;
         return fetch(url,
         {
             method: "get"

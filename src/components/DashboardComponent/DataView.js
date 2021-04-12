@@ -80,7 +80,7 @@ function DeleteButton(props){
 
 function deleteRequest (id) {
     console.log('aa')
-    let url=`http://localhost:3000/deleteOrders/${id}`;
+    let url=`http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/deleteOrders/${id}`;
     fetch(url,
         {
             method: "DELETE"

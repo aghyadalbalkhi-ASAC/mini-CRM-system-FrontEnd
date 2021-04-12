@@ -9,7 +9,7 @@ class Login extends Component {
     }
 
     login = event =>{
-        fetch('http://localhost:3000/adminLogin',{
+        fetch('http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/adminLogin',{
             method:'POST',
             
             body:JSON.stringify(this.state.credentials)

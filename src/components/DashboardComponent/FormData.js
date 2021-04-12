@@ -42,10 +42,10 @@ class FormData extends Component {
 
         if (this.state.status ==='new') { 
 
-            url = `http://localhost:3000/newOrders`;
+            url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/newOrders`;
             method ='POST';
         }else{
-            url = `http://localhost:3000/editOrders/${this.props.match.params.id}`;
+            url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/editOrders/${this.props.match.params.id}`;
             method ='PUT';
             }
 
@@ -72,7 +72,7 @@ class FormData extends Component {
 
     handleDataId(id){
         console.log(id);
-        let url = `http://localhost:3000/orders/${id}`;
+        let url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/orders/${id}`;
         fetch(url,
         {
             method: "get"

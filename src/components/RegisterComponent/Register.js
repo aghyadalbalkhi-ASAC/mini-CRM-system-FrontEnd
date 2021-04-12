@@ -10,7 +10,7 @@ class Register extends Component {
     }
 
     register = event =>{
-        fetch('http://localhost:3000/adminSingUp',{
+        fetch('http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/adminSingUp',{
             method:'POST',
             
             body:JSON.stringify(this.state.credentials)
