@@ -1,7 +1,9 @@
 
 console.log('order model')
+import baseUrl from './baseUrl';
+
 const getOrders= async () =>  {
-    let url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/orders`;
+    let url = `${baseUrl}/orders`;
         return fetch(url,
         {
             method: "get"

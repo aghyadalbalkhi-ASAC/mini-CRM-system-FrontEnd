@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button, Form, FormGroup, Label, Input, Col, FormFeedback } from 'reactstrap';
-
+import baseUrl from '../../shared/baseUrl';
 
 class FormData extends Component {
 
@@ -42,10 +42,10 @@ class FormData extends Component {
 
         if (this.state.status ==='new') { 
 
-            url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/newOrders`;
+            url = `${baseUrl}/newOrders`;
             method ='POST';
         }else{
-            url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/editOrders/${this.props.match.params.id}`;
+            url = `${baseUrl}/editOrders/${this.props.match.params.id}`;
             method ='PUT';
             }
 
@@ -72,7 +72,7 @@ class FormData extends Component {
 
     handleDataId(id){
         console.log(id);
-        let url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/orders/${id}`;
+        let url = `${baseUrl}/orders/${id}`;
         fetch(url,
         {
             method: "get"

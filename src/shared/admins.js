@@ -1,6 +1,8 @@
 
+import baseUrl from './baseUrl';
+
 const getAdmins= async () =>  {
-    let url = `http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/admins`;
+    let url = `${baseUrl}/admins`;
         return fetch(url,
         {
             method: "get"

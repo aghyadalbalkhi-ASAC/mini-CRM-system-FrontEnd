@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Jumbotron, Button, Form, FormGroup, Label, Input, Col} from 'reactstrap';
+import baseUrl from '../../shared/baseUrl';
 
 
 class Register extends Component {
@@ -10,7 +11,7 @@ class Register extends Component {
     }
 
     register = event =>{
-        fetch('http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/adminSingUp',{
+        fetch(`${baseUrl}/adminSingUp`,{
             method:'POST',
             
             body:JSON.stringify(this.state.credentials)

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { Jumbotron, Button, Form, FormGroup, Label, Input, Col} from 'reactstrap';
+import baseUrl from '../../shared/baseUrl';
 
 class Login extends Component {
     state = {
@@ -9,7 +10,7 @@ class Login extends Component {
     }
 
     login = event =>{
-        fetch('http://ec2-54-209-2-124.compute-1.amazonaws.com:3000/adminLogin',{
+        fetch(`${baseUrl}/adminLogin`,{
             method:'POST',
             
             body:JSON.stringify(this.state.credentials)
